@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SecondPage</title>
+    <title>Leads</title>
 </head>
 <body>
-<h1>World</h1>
-<p>This is the second page</p>
-<p>My name is {{leads}} years old</p>
+
+<h1>Lead List</h1>
 <ul>
     {% for lead in leads %}
-    <li>{{lead}}</li>
+    <li>{{lead.first_name}} {{lead.last_name}} {{lead.age}}</li>
     {% endfor %}
 </ul>
 </body>
