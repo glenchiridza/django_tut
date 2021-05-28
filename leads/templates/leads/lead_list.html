@@ -7,11 +7,12 @@
 <body>
 
 
-<a href="/leads/create/">Create a new Lead</a>
+<!--<a href="/leads/create/">Create a new Lead</a>-->
+<a href="{% url 'leads:lead-create' %}">Create a new Lead</a>
 <h1>Lead List</h1>
 <ul>
     {% for lead in leads %}
-    <a href="/leads/{{lead.pk }}/">{{lead.first_name}} {{lead.last_name}} {{lead.age}}</a>
+    <a href="{% url 'leads:lead-detail' lead.pk %}">{{lead.first_name}} {{lead.last_name}} {{lead.age}}</a>
     {% endfor %}
 </ul>
 </body>
