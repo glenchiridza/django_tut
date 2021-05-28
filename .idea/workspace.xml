@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4776fe7-0f78-48d7-9635-a7920427d61c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djcrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djcrm/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djcrm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djcrm/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leads/templates/leads/lead_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/lead_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leads/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/leads/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/leads/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.babelrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.github/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.stylelintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bootstrap/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +49,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leads/templates/leads" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/leads/templates/leads" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/dist" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/leads/templates/leads" />
     </key>
   </component>
   <component name="SvnConfiguration">

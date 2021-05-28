@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>CRM</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
-    <script src ="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src ="{% static 'dist/js/bootstrap.min.js' %}"></script>
 
 </head>
 <body>
 
+{% include "navbar.html" %}
+<div class="content">
 {% block content %}
 {% endblock %}
+
+</div>
 
 {% include "scripts.html" %}
 </body>

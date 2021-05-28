@@ -1,7 +1,22 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,reverse
 from django.http import HttpResponse
 from .models import Lead, Agent
 from .forms import LeadForm, LeadModelForm
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
+
+
+class LandingPageView(TemplateView):
+    template_name = "landing_page.html"
+
+
+def landing_page(request):
+    return render(request, 'landing_page.html')
+
+
+class LeadListView(ListView):
+    template_name = "leads/lead_list.html"
+    queryset = Lead.objects.all()
+    context_object_name = "leads"
 
 
 def lead_list(request):
@@ -10,12 +25,26 @@ def lead_list(request):
     return render(request, "leads/lead_list.html", context)
 
 
+class LeadDetailView(DetailView):
+    template_name = 'leads/lead_detail.html'
+    queryset = Lead.objects.all()
+    context_object_name = "lead"
+
+
 def lead_detail(request, pk):
     lead = Lead.objects.get(id=pk)
     context = {
         "lead": lead
     }
     return render(request, 'leads/lead_detail.html', context)
+
+
+class LeadCreateView(CreateView):
+    template_name = 'leads/lead_create.html'
+    form_class = LeadModelForm
+
+    def get_success_url(self):
+        return reverse("leads:lead-list")
 
 
 def lead_create(request):
@@ -32,6 +61,14 @@ def lead_create(request):
     return render(request, 'leads/lead_create.html', context)
 
 
+class LeadUpdateView(UpdateView):
+    template_name = 'leads/lead_update.html'
+    queryset = Lead.objects.all()
+    form_class = LeadModelForm
+
+    def get_success_url(self):
+        return reverse('leads:lead-list')
+
 def lead_update(request, pk):
     lead = Lead.objects.get(id=pk)
     form = LeadModelForm(instance=lead)
@@ -45,6 +82,14 @@ def lead_update(request, pk):
         "lead": lead
     }
     return render(request, 'leads/lead_update.html', context)
+
+
+class LeadDeleteView(UpdateView):
+    template_name = 'leads/lead_delete.html'
+    queryset = Lead.objects.all()
+
+    def get_success_url(self):
+        return reverse('leads:lead-list')
 
 
 def lead_delete(request, pk):
