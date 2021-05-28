@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+    <script src ="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+{% include "scripts.html" %}
+</body>
+</html>
