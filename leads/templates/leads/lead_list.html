@@ -9,7 +9,7 @@
 <h1>Lead List</h1>
 <ul>
     {% for lead in leads %}
-    <li>{{lead.first_name}} {{lead.last_name}} {{lead.age}}</li>
+    <a href="/leads/{{lead.pk }}/">{{lead.first_name}} {{lead.last_name}} {{lead.age}}</a>
     {% endfor %}
 </ul>
 </body>
