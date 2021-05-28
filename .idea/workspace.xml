@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4776fe7-0f78-48d7-9635-a7920427d61c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.babelrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.github/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.stylelintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.stylelintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djcrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djcrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leads/templates/leads/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/home_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leads/templates/leads/lead_create.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/lead_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leads/templates/leads/lead_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/lead_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leads/templates/leads/lead_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/lead_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leads/templates/leads/lead_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/leads/templates/leads/lead_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djcrm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djcrm/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +42,7 @@
       <recent name="$PROJECT_DIR$/leads/templates/leads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
