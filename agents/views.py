@@ -49,7 +49,7 @@ class AgentUpdateView(LoginRequiredMixin, generic.UpdateView):
         return Agent.objects.filter(organization=organization)
 
 
-class AgentDeleteView(LoginRequiredMixin, generic.DetailView):
+class AgentDeleteView(LoginRequiredMixin, generic.DeleteView):
     template_name = 'agents/agent_delete.html'
     form_class = AgentModelForm
 

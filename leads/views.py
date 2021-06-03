@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from .models import Lead, Agent
 from .forms import LeadForm, LeadModelForm, CustomUserCreationForm
-from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 class SignUpView(CreateView):
@@ -105,7 +105,7 @@ def lead_update(request, pk):
     return render(request, 'leads/lead_update.html', context)
 
 
-class LeadDeleteView(LoginRequiredMixin, UpdateView):
+class LeadDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'leads/lead_delete.html'
     queryset = Lead.objects.all()
 
