@@ -5,8 +5,9 @@ from django.shortcuts import reverse
 class LandingPageTest(TestCase):
 
     def test_status_code(self):
-        response = self.client.get(reverse("landing page"))
+        response = self.client.get(reverse("landing-page"))
         print(response.content)
+        print(response.status_code)
 
     def test_template_name(self):
         pass
