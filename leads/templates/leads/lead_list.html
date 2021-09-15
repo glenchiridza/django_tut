@@ -5,7 +5,9 @@
 <div class="container">
 
 <!--<a href="/leads/create/">Create a new Lead</a>-->
+    {% if request.user.is_organisor %}
 <a href="{% url 'leads:lead-create' %}">Create a new Lead</a>
+    {% endif %}
 <h1>Lead List</h1>
 
 
