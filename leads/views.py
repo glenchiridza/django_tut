@@ -28,9 +28,13 @@ class LeadListView(LoginRequiredMixin, ListView):
     context_object_name = "leads"
 
     def get_queryset(self):
-        queryset = Lead.objects.all()
-        if self.request.user.is_agent:
-            queryset = queryset.filter(agent__user=self.request.user)
+        user = self.request.user
+        if user.is_organisor:
+            queryset = Lead.objects.filter(orgranization=user.userprofile)
+        else:
+            queryset = Lead.objects.filter(organization=user.agent.organization)
+
+            queryset = queryset.filter(agent__user=user)
         return queryset
 
 
