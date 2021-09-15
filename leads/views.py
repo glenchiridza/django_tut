@@ -25,8 +25,13 @@ def landing_page(request):
 
 class LeadListView(LoginRequiredMixin, ListView):
     template_name = "leads/lead_list.html"
-    queryset = Lead.objects.all()
     context_object_name = "leads"
+
+    def get_queryset(self):
+        queryset = Lead.objects.all()
+        if self.request.user.is_agent:
+            queryset = queryset.filter(agent__user=self.request.user)
+        return queryset
 
 
 def lead_list(request):
