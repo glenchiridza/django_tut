@@ -21,6 +21,15 @@
 
 </div>
 
+{% if unassigned_leads.exists %}
+    {% for lead in unassigned_leads %}
+<div class="col-md-12">
+    <a href="{% url 'leads:lead-detail' lead.pk %}">{{lead.first_name}} {{lead.last_name}} {{lead.age}}</a>
+    </div>
+    {% endfor %}
+
+</div>
+{% endif %}
 
 </div>
 
