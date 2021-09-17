@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4776fe7-0f78-48d7-9635-a7920427d61c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djcrm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djcrm/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_email.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
